@@ -121,6 +121,11 @@ a{color:var(--acc)}a:hover{color:#ECF1EC}
   .work-item{width:100%}
   .hero-vis{opacity:.45}
   .navlinks{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap !important}
+  .navlinks{justify-content:space-between;gap:4px 10px !important}
+  .navlinks .nl{font-size:10px !important;padding:8px 0 !important}
+  .navlinks .ix{display:none}
+  .langsw{margin-left:auto;padding:2px !important}
+  .langsw .pill{min-width:30px !important;min-height:26px !important;font-size:10px !important}
   .proj{flex-direction:column !important}
   .proj-num{font-size:96px !important}
 }
