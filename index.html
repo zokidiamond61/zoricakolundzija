@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kolundzija Zorica — Portfolio</title>
+<meta name="description" content="Kolundzija Zorica — creative portfolio: drawings, illustrations, design and web projects.">
+<meta name="theme-color" content="#060807">
+<meta property="og:title" content="Kolundzija Zorica — Portfolio">
+<meta property="og:description" content="Drawings, illustrations, design and web projects.">
+<meta property="og:image" content="images/o-meni/zorica.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23060807'/%3E%3Crect x='16' y='16' width='32' height='32' transform='rotate(45 32 32)' fill='none' stroke='%23C8FF2E' stroke-width='3'/%3E%3Ctext x='32' y='38' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%23C8FF2E'%3EKZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ UVOD (KZ logo pri otvaranju) ============ -->
+<div class="intro" aria-hidden="true" style="position: fixed; inset: 0; z-index: 300; background: #060807; display: grid; place-items: center; pointer-events: none">
+  <div style="position: relative; width: 168px; height: 168px; display: grid; place-items: center">
+    <span class="intro-glow" style="position: absolute; inset: 14px; border-radius: 50%; background: var(--acc); filter: blur(42px)"></span>
+    <svg viewBox="0 0 100 100" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+      <rect class="intro-draw" pathLength="1" x="22" y="22" width="56" height="56" transform="rotate(45 50 50)" fill="none" stroke="var(--acc)" stroke-width="1.4"></rect>
+    </svg>
+    <span class="disp intro-txt" style="position: relative; font-weight: 600; font-size: 40px; color: var(--acc)">KZ</span>
+  </div>
+  <span class="intro-bar" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: var(--acc)"></span>
+</div>
+
+<!-- ============ NAVIGACIJA ============ -->
+<header style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; padding: 14px clamp(20px, 7vw, 128px); background: rgba(6, 8, 7, 0.84); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(200, 255, 46, 0.12)">
+  <a href="#top" aria-label="Kolundzija Zorica" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #ECF1EC; min-height: 44px">
+    <span aria-hidden="true" style="position: relative; width: 40px; height: 40px; display: grid; place-items: center">
+      <span style="position: absolute; inset: 0; border: 1.5px solid var(--acc); transform: rotate(45deg)"></span>
+      <span class="disp" style="position: relative; font-weight: 500; font-size: 14px; letter-spacing: -0.02em; color: var(--acc)">KZ</span>
+    </span>
+    <span style="display: flex; flex-direction: column; line-height: 1.15">
+      <span class="disp" style="font-weight: 600; font-size: 15px; letter-spacing: 0.01em">Kolundzija Zorica</span>
+      <span class="mono" style="font-size: 10px; color: #93A198" data-i18n="role"></span>
+    </span>
+  </a>
+  <nav class="navlinks" aria-label="Main" style="display: flex; gap: 4px 22px; flex-wrap: wrap; align-items: center">
+    <a class="nl mono" href="#about" style="font-size: 12px; padding: 12px 2px; white-space: nowrap"><span class="ix">01 </span><span data-i18n="navAbout"></span></a>
+    <a class="nl mono" href="#works" style="font-size: 12px; padding: 12px 2px; white-space: nowrap"><span class="ix">02 </span><span data-i18n="navWorks"></span></a>
+    <a class="nl mono" href="#web" style="font-size: 12px; padding: 12px 2px; white-space: nowrap"><span class="ix">03 </span><span data-i18n="navWeb"></span></a>
+    <a class="nl mono" href="#skills" style="font-size: 12px; padding: 12px 2px; white-space: nowrap"><span class="ix">04 </span><span data-i18n="navSkills"></span></a>
+    <a class="nl mono" href="#contact" style="font-size: 12px; padding: 12px 2px; white-space: nowrap"><span class="ix">05 </span><span data-i18n="navContact"></span></a>
+  </nav>
+  <div role="group" aria-label="Language" style="display: flex; border: 1px solid rgba(236, 241, 236, 0.2); border-radius: 999px; padding: 3px">
+    <button type="button" class="pill mono" data-lang="en" aria-pressed="false">EN</button>
+    <button type="button" class="pill mono" data-lang="sr" aria-pressed="false">SR</button>
+    <button type="button" class="pill mono" data-lang="de" aria-pressed="false">DE</button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="top" class="gridtex" style="position: relative; min-height: 820px; padding: clamp(56px, 9vw, 120px) clamp(20px, 7vw, 128px) 72px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; border-bottom: 1px solid rgba(236, 241, 236, 0.08)">
+
+  <div id="crossV" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; width: 1px; background: var(--acc); opacity: 0; left: 62%; transition: opacity .4s; pointer-events: none"></div>
+  <div id="crossH" aria-hidden="true" style="position: absolute; left: 0; right: 0; height: 1px; background: var(--acc); opacity: 0; top: 50%; transition: opacity .4s; pointer-events: none"></div>
+
+  <div id="heroVis" class="hero-vis" aria-hidden="true" style="position: absolute; left: clamp(-200px, -8vw, -60px); top: 50%; width: clamp(360px, 44vw, 640px); aspect-ratio: 1 / 1; pointer-events: none; transform: translate(0px, -50%); transition: transform .6s cubic-bezier(.2,.8,.2,1)">
+    <div style="position: absolute; inset: 14%; border-radius: 50%; background: #0F2E22"></div>
+    <div style="position: absolute; left: 30%; top: 8%; width: 44%; height: 84%; border: 1px solid rgba(200, 255, 46, 0.35); transform: rotate(-14deg)"></div>
+    <div style="position: absolute; right: 12%; top: 18%; width: 12%; aspect-ratio: 1 / 1; border: 1.5px solid #ECF1EC; border-radius: 50%"></div>
+    <svg class="spin" viewBox="0 0 400 400" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+      <defs><path id="kzring" d="M200,200 m-176,0 a176,176 0 1,1 352,0 a176,176 0 1,1 -352,0"></path></defs>
+      <text style="font-family: 'JetBrains Mono', monospace; font-size: 13.5px; letter-spacing: 4px; fill: #ECF1EC"><textPath href="#kzring" data-i18n="ring"></textPath></text>
+    </svg>
+    <div id="heroDot" style="position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: var(--acc); box-shadow: 0 0 0 10px rgba(200, 255, 46, 0.14), 0 0 0 22px rgba(200, 255, 46, 0.06); left: 57%; top: 50%; transition: left .5s cubic-bezier(.2,.8,.2,1), top .5s cubic-bezier(.2,.8,.2,1)"></div>
+  </div>
+
+  <div style="position: relative; display: flex; flex-direction: column; align-items: flex-end; text-align: right; gap: 32px; width: 100%; max-width: 1100px; margin-left: auto">
+    <p class="mono rise" style="margin: 0; font-size: 12px; color: var(--acc); display: flex; align-items: center; gap: 10px">
+      <span class="blink" style="width: 8px; height: 8px; border-radius: 50%; background: var(--acc); flex: none"></span><span data-i18n="kicker"></span>
+    </p>
+    <h1 class="name-font" style="margin: 0; font-weight: 500; letter-spacing: 0.04em; font-size: clamp(48px, 9vw, 140px); line-height: 1.05; display: flex; flex-direction: column; align-items: flex-end">
+      <span class="rise d1">Kolundzija</span>
+      <span class="rise d2" style="color: var(--acc)">Zorica</span>
+    </h1>
+    <svg aria-hidden="true" viewBox="0 0 420 4" preserveAspectRatio="none" style="display: block; width: min(420px, 60%); height: 4px; overflow: visible">
+      <path class="draw" pathLength="1" d="M416 2 L4 2" fill="none" stroke="var(--acc)" stroke-width="1.5" stroke-linecap="round"></path>
+    </svg>
+    <div class="rise d3" style="display: flex; flex-direction: column; align-items: flex-end; gap: 28px">
+      <div style="max-width: 560px; display: flex; flex-direction: column; align-items: flex-end; gap: 14px">
+        <p class="disp" style="margin: 0; font-weight: 400; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.3; letter-spacing: -0.01em" data-i18n="heroA"></p>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #B7C2BA; max-width: 440px" data-i18n="heroIntro"></p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px">
+        <a href="#works" class="btn btn-p disp" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: var(--acc); color: #060807; text-decoration: none; font-weight: 600; font-size: 15px"><span data-i18n="ctaWork"></span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"></path></svg></a>
+        <a href="#contact" class="btn btn-g disp" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border-radius: 999px; border: 1px solid rgba(236, 241, 236, 0.35); color: #ECF1EC; text-decoration: none; font-weight: 600; font-size: 15px" data-i18n="ctaContact"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rise d5" style="position: relative; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-top: 64px">
+    <div style="display: flex; align-items: center; gap: 16px">
+      <span style="position: relative; width: 1px; height: 56px; background: rgba(236, 241, 236, 0.15); overflow: hidden"><span class="drop" style="position: absolute; inset: 0; background: var(--acc)"></span></span>
+      <span class="mono" style="font-size: 11px; color: #93A198" data-i18n="scroll"></span>
+    </div>
+    <div aria-hidden="true" style="position: relative; width: 104px; height: 104px; display: grid; place-items: center">
+      <span class="kzmark-glow" style="position: absolute; inset: 10px; border-radius: 50%; background: var(--acc); filter: blur(26px)"></span>
+      <span style="position: absolute; inset: 22px; border: 1.5px solid var(--acc); transform: rotate(45deg)"></span>
+      <span class="kzmark-d2" style="position: absolute; inset: 22px; border: 1px solid rgba(236, 241, 236, 0.45)"></span>
+      <span class="disp kzmark-t" style="position: relative; font-weight: 600; font-size: 22px; letter-spacing: 0.02em; color: var(--acc)">KZ</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAKA ============ -->
+<div aria-hidden="true" style="overflow: hidden; padding: 28px 0">
+<div style="overflow: hidden; background: var(--acc); color: #060807; transform: rotate(-1.2deg); margin: 0 -20px; padding: 16px 0">
+  <div class="marq disp" style="display: flex; width: max-content; font-weight: 500; font-size: clamp(24px, 3vw, 40px); letter-spacing: -0.02em; white-space: nowrap">
+    <span style="padding-right: 40px" data-i18n="marquee"></span><span style="padding-right: 40px" data-i18n="marquee"></span>
+  </div>
+</div>
+</div>
+
+<!-- ============ O MENI ============ -->
+<section id="about" style="padding: clamp(80px, 10vw, 140px) clamp(20px, 7vw, 128px); max-width: 1440px; margin: 0 auto">
+  <div style="display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start">
+    <div class="rv" style="flex: 1 1 100%; display: flex; flex-direction: column; gap: 20px">
+      <span class="mono" style="font-size: 12px; color: var(--acc)">(01) — <span data-i18n="aboutLabel"></span></span>
+      <h2 class="disp" style="margin: 0; font-weight: 500; font-size: clamp(34px, 4.4vw, 64px); line-height: 1.08; letter-spacing: -0.02em"><span data-i18n="aboutTitleA"></span><br><span class="outline" data-i18n="aboutTitleB"></span></h2>
+    </div>
+    <div class="rv ab-photo" style="flex: 0 0 calc(40% - 18px); position: relative; margin-top: 18px; margin-left: 18px">
+      <div aria-hidden="true" style="position: absolute; inset: -18px 18px 18px -18px; border: 1px solid rgba(200, 255, 46, 0.5)"></div>
+      <img id="aboutPhoto" src="" alt="Kolundzija Zorica" style="position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover">
+      <span class="mono ab-tag" style="position: absolute; right: -14px; bottom: 28px; transform: rotate(90deg); transform-origin: right bottom; font-size: 10px; color: #93A198">KZ — 4:5</span>
+    </div>
+    <div class="rv ab-text" style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 14px; margin-top: 18px">
+      <span class="mono" style="font-size: 11px; color: #93A198; display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 1px; background: var(--acc)"></span><span data-i18n="aboutTextLabel"></span></span>
+      <p id="aboutText" style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #ECF1EC; white-space: pre-line; text-align: justify; hyphens: auto"></p>
+    </div>
+    <div class="rv" style="flex: 1 1 100%; display: flex; flex-direction: column; gap: 18px; margin-top: -8px; padding: 28px 0 0; border-top: 1px solid rgba(236, 241, 236, 0.12)">
+      <span class="mono" style="font-size: 11px; color: #93A198; display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 1px; background: var(--acc)"></span><span data-i18n="bioLabel"></span></span>
+      <p id="aboutBio" style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #B7C2BA; white-space: pre-line; columns: 2 300px; column-gap: 56px; text-align: justify; hyphens: auto"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RADOVI / GALERIJA ============ -->
+<section id="works" style="position: relative; padding: clamp(64px, 7vw, 96px) clamp(20px, 7vw, 128px); border-top: 1px solid rgba(236, 241, 236, 0.08)">
+  <div style="max-width: 1440px; margin: 0 auto">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: clamp(36px, 4vw, 56px)">
+      <div class="rv" style="display: flex; flex-direction: column; gap: 20px">
+        <span class="mono" style="font-size: 12px; color: var(--acc)">(02) — <span data-i18n="worksLabel"></span> · <span id="worksCount"></span></span>
+        <h2 class="disp" style="margin: 0; font-weight: 500; font-size: clamp(42px, 7.6vw, 120px); line-height: 1.04; letter-spacing: -0.03em"><span data-i18n="worksTitleA"></span><br><span style="padding-left: clamp(24px, 8vw, 140px); color: var(--acc)" data-i18n="worksTitleB"></span></h2>
+      </div>
+      <div class="rv" aria-hidden="true" style="position: relative; width: 176px; height: 176px; flex: none; margin-right: 8px">
+        <svg class="spin" viewBox="0 0 200 200" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+          <defs><path id="kzring2" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0"></path></defs>
+          <text style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; fill: var(--acc)"><textPath href="#kzring2" data-i18n="ring2"></textPath></text>
+        </svg>
+        <div class="spin-rev" style="position: absolute; inset: 40px; border-radius: 50%; border: 1px dashed rgba(200, 255, 46, 0.5)">
+          <span style="position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--acc)"></span>
+        </div>
+        <span class="pulse" style="position: absolute; left: 50%; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--acc)"></span>
+      </div>
+    </div>
+
+    <div id="worksRows" style="display: flex; flex-direction: column; gap: clamp(28px, 3vw, 40px)"></div>
+
+    <div style="margin-top: clamp(56px, 6vw, 88px); display: flex; flex-direction: column; gap: 24px">
+      <div class="rv" style="display: flex; align-items: center; gap: 16px">
+        <span class="mono" style="font-size: 12px; color: var(--acc)" data-i18n="logosLabel"></span>
+        <span style="flex: 1; height: 1px; background: rgba(236, 241, 236, 0.14)"></span>
+      </div>
+      <div id="logos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(16px, 1.6vw, 24px)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WEB PROJEKTI ============ -->
+<section id="web" style="position: relative; background: #0C2219; padding: clamp(80px, 9vw, 130px) clamp(20px, 7vw, 128px); overflow: hidden">
+  <div aria-hidden="true" class="gridtex" style="position: absolute; inset: 0; opacity: 0.7; pointer-events: none"></div>
+  <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 6px; background: var(--acc)"></div>
+  <div id="projects" style="position: relative; max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(72px, 9vw, 140px)">
+    <div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <span class="mono" style="font-size: 12px; color: var(--acc)">(03) — <span data-i18n="webLabel"></span></span>
+        <h2 class="disp" style="margin: 0; font-weight: 500; font-size: clamp(38px, 6.4vw, 100px); line-height: 1.06; letter-spacing: -0.03em"><span data-i18n="webTitleA"></span><br><span class="outline" data-i18n="webTitleB"></span></h2>
+      </div>
+      <p style="margin: 0; max-width: 340px; color: #B7C2BA" data-i18n="webNote"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VJEŠTINE ============ -->
+<section id="skills" style="padding: clamp(48px, 5vw, 72px) clamp(20px, 7vw, 128px); max-width: 1440px; margin: 0 auto">
+  <div style="display: flex; flex-wrap: wrap; gap: 24px 64px">
+    <div class="rv" style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 12px">
+      <span class="mono" style="font-size: 12px; color: var(--acc)">(04) — <span data-i18n="skillsLabel"></span></span>
+      <h2 class="disp" style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.8vw, 40px); line-height: 1.08; letter-spacing: -0.02em" data-i18n="skillsTitle"></h2>
+    </div>
+    <div id="skillsList" style="flex: 3 1 560px; display: flex; flex-direction: column"></div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="contact" style="position: relative; overflow: hidden; background: #0F2E22; padding: clamp(80px, 10vw, 150px) clamp(20px, 7vw, 128px) 20px">
+  <div aria-hidden="true" style="position: absolute; right: -12vw; top: -14vw; width: 46vw; aspect-ratio: 1 / 1; border-radius: 50%; border: 1px solid rgba(200, 255, 46, 0.3)"></div>
+  <div aria-hidden="true" style="position: absolute; right: -6vw; top: -8vw; width: 34vw; aspect-ratio: 1 / 1; border-radius: 50%; border: 1px solid rgba(200, 255, 46, 0.18)"></div>
+  <div style="position: relative; max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(56px, 7vw, 96px)">
+    <div class="rv" style="display: flex; flex-direction: column; gap: 24px">
+      <span class="mono" style="font-size: 12px; color: var(--acc)">(05) — <span data-i18n="contactLabel"></span></span>
+      <h2 class="disp" style="margin: 0; font-weight: 500; font-size: clamp(34px, 6.8vw, 108px); line-height: 1.06; letter-spacing: -0.03em">
+        <span style="display: block" data-i18n="cA"></span>
+        <span class="outline" style="display: block; padding-left: clamp(20px, 10vw, 180px)" data-i18n="cB"></span>
+        <span style="display: block; color: var(--acc)" data-i18n="cC"></span>
+      </h2>
+      <p style="margin: 0; max-width: 520px; font-size: 18px; color: #C9D3CC" data-i18n="contactNote"></p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: stretch">
+      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column">
+        <span class="disp outline rv" aria-hidden="true" style="font-weight: 500; font-size: clamp(64px, 9vw, 140px); line-height: 0.9; letter-spacing: -0.04em; margin-bottom: 28px">KZ</span>
+        <a id="phoneLink" class="clink rv" href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 28px 0; border-top: 1px solid rgba(236, 241, 236, 0.2)">
+          <span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+            <span class="mono" style="font-size: 11px; color: #93A198" data-i18n="phone"></span>
+            <span id="phoneText" class="disp" style="font-weight: 400; font-size: clamp(18px, 1.7vw, 24px); letter-spacing: 0"></span>
+          </span>
+          <svg class="cl-arrow" width="34" height="34" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"></path></svg>
+        </a>
+        <div class="rv" style="display: flex; align-items: center; gap: 16px; padding: 28px 0; border-top: 1px solid rgba(236, 241, 236, 0.2); border-bottom: 1px solid rgba(236, 241, 236, 0.2)">
+          <a id="emailLink" class="clink" href="#" style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+            <span class="mono" style="font-size: 11px; color: #93A198" data-i18n="email"></span>
+            <span id="emailText" class="disp" style="font-weight: 400; font-size: clamp(16px, 1.7vw, 24px); letter-spacing: 0; overflow-wrap: anywhere"></span>
+          </a>
+          <button id="copyBtn" type="button" class="ibtn mono" aria-live="polite" style="flex: none; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid rgba(236, 241, 236, 0.35); background: transparent; color: #ECF1EC; font-size: 11px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="1.5"></rect><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"></path></svg><span id="copyLabel" data-i18n="copy"></span>
+          </button>
+        </div>
+        <a class="map-card rv" href="https://www.google.com/maps/place/Prijedor" target="_blank" rel="noopener noreferrer" data-i18n-aria="mapAria" style="position: relative; display: block; margin-top: 32px; aspect-ratio: 16 / 9; overflow: hidden; background: #0B1D15; border: 1px solid rgba(200, 255, 46, 0.25); color: #ECF1EC; text-decoration: none">
+          <svg class="map-svg" viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%">
+            <defs><pattern id="kzmapgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(236,241,236,0.05)" stroke-width="1"></path></pattern></defs>
+            <rect width="600" height="340" fill="url(#kzmapgrid)"></rect>
+            <path d="M-20 30 C 110 80, 150 150, 250 168 S 420 222, 620 300" fill="none" stroke="#17483A" stroke-width="16" stroke-linecap="round"></path>
+            <path d="M-20 30 C 110 80, 150 150, 250 168 S 420 222, 620 300" fill="none" stroke="#1F5E4B" stroke-width="2" stroke-dasharray="2 10"></path>
+            <g fill="none" stroke="rgba(236,241,236,0.2)" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M0 214 L140 192 L260 202 L380 172 L600 152" stroke-width="3.5"></path>
+              <path d="M0 92 L120 110 L300 112 L460 82 L600 72" stroke-width="2.5"></path>
+              <path d="M120 0 L150 122 L172 192 L204 340" stroke-width="2.5"></path>
+              <path d="M300 0 L290 112 L302 202 L282 340" stroke-width="3"></path>
+              <path d="M420 0 L440 92 L470 172 L520 340" stroke-width="2.5"></path>
+              <path d="M180 262 L320 252 L460 272 L600 262" stroke-width="2"></path>
+            </g>
+            <g fill="none" stroke="rgba(236,241,236,0.09)" stroke-width="1.2">
+              <path d="M60 0 L80 340"></path><path d="M230 0 L240 340"></path><path d="M360 0 L350 340"></path><path d="M540 0 L560 340"></path>
+              <path d="M0 150 L600 128"></path><path d="M0 300 L600 310"></path><path d="M0 44 L600 30"></path>
+            </g>
+            <circle class="map-ring" cx="300" cy="170" r="10" fill="none" stroke="#C8FF2E" stroke-width="2"></circle>
+            <circle class="map-ring map-ring2" cx="300" cy="170" r="10" fill="none" stroke="#C8FF2E" stroke-width="2"></circle>
+            <circle cx="300" cy="170" r="22" fill="rgba(200,255,46,0.12)"></circle>
+            <circle cx="300" cy="170" r="8" fill="#C8FF2E"></circle>
+          </svg>
+          <span class="mono map-open" style="position: absolute; top: 14px; right: 14px; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: rgba(6, 8, 7, 0.75); font-size: 10px; color: #ECF1EC"><span data-i18n="mapOpen"></span>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"></path></svg></span>
+          <span style="position: absolute; left: 16px; bottom: 14px; display: flex; flex-direction: column; gap: 2px">
+            <span class="disp" style="font-weight: 500; font-size: 20px; color: #ECF1EC">Prijedor</span>
+            <span class="mono" style="font-size: 10px; color: #B7C2BA"><span data-i18n="country"></span> · 44.98° N, 16.71° E</span>
+          </span>
+        </a>
+      </div>
+
+      <form id="contactForm" class="rv" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px; margin-top: clamp(24px, 9vw, 150px); padding: clamp(24px, 2.6vw, 36px); background: #060807; border: 1px solid rgba(200, 255, 46, 0.25); clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%)">
+        <span class="disp" style="font-weight: 500; font-size: clamp(24px, 2.2vw, 32px)" data-i18n="formTitle"></span>
+        <label style="display: flex; flex-direction: column; gap: 8px">
+          <span class="mono" style="font-size: 11px; color: #93A198" data-i18n="fName"></span>
+          <input id="fName" class="fld" type="text" autocomplete="name" style="min-height: 48px; padding: 0 0 0 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236, 241, 236, 0.3); color: #ECF1EC; font: inherit; font-size: 17px">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 8px">
+          <span class="mono" style="font-size: 11px; color: #93A198" data-i18n="fEmail"></span>
+          <input id="fEmail" class="fld" type="email" autocomplete="email" style="min-height: 48px; padding: 0 0 0 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236, 241, 236, 0.3); color: #ECF1EC; font: inherit; font-size: 17px">
+        </label>
+        <label style="flex: 1 1 auto; display: flex; flex-direction: column; gap: 8px">
+          <span class="mono" style="font-size: 11px; color: #93A198" data-i18n="fMsg"></span>
+          <textarea id="fMsg" class="fld" rows="2" style="flex: 1 1 auto; min-height: 56px; padding: 10px 0 0 2px; background: transparent; border: 0; border-bottom: 1px solid rgba(236, 241, 236, 0.3); color: #ECF1EC; font: inherit; font-size: 17px; resize: vertical"></textarea>
+        </label>
+        <a id="sendLink" href="#" class="btn btn-p disp" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: var(--acc); color: #060807; text-decoration: none; font-weight: 600"><span data-i18n="send"></span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"></path></svg></a>
+        <span style="font-size: 13px; color: #93A198" data-i18n="formHint"></span>
+      </form>
+    </div>
+
+    <footer style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); align-items: center; gap: 16px; padding-top: 20px; margin-top: clamp(-48px, -3vw, -24px); border-top: 1px solid rgba(236, 241, 236, 0.14)">
+      <span aria-hidden="true"></span>
+      <span class="mono" style="font-size: 11px; color: #93A198; text-align: center">© <span id="year"></span> Kolundzija Zorica — <span data-i18n="rights"></span></span>
+      <a href="#top" class="btn btn-p mono" style="justify-self: end; display: inline-flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 10px 0 24px; border-radius: 999px; background: var(--acc); color: #060807; text-decoration: none; font-size: 13px; font-weight: 500"><span data-i18n="top"></span>
+        <span style="width: 40px; height: 40px; border-radius: 50%; background: #060807; color: var(--acc); display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5"></path></svg></span></a>
+    </footer>
+  </div>
+</section>
+</main>
+
+<!-- ============ VELIKI PRIKAZ RADA ============ -->
+<div id="lightbox" class="lb" role="dialog" aria-modal="true" hidden style="position: fixed; inset: 0; z-index: 200; background: rgba(4, 7, 5, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); display: flex; flex-direction: column; padding: clamp(12px, 3vw, 32px); gap: 16px">
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+    <span id="lbCounter" class="mono" style="font-size: 12px; color: var(--acc)"></span>
+    <button id="lbClose" type="button" class="ibtn mono" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(236, 241, 236, 0.35); background: transparent; color: #ECF1EC; font-size: 11px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px"><span data-i18n="close"></span>
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"></path></svg></button>
+  </div>
+  <div id="lbStage" style="flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center">
+    <img id="lbImg" src="" alt="" style="display: block; max-width: 100%; max-height: 100%; object-fit: contain">
+  </div>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+    <span id="lbNum" class="disp outline" style="font-weight: 500; font-size: clamp(44px, 5vw, 72px); line-height: 1"></span>
+    <div style="display: flex; gap: 8px">
+      <button id="lbPrev" type="button" class="ibtn" data-i18n-aria="prev" style="width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(236, 241, 236, 0.35); background: transparent; color: #ECF1EC; cursor: pointer; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 3L5 8l5 5"></path></svg></button>
+      <button id="lbNext" type="button" class="ibtn" data-i18n-aria="next" style="width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(236, 241, 236, 0.35); background: transparent; color: #ECF1EC; cursor: pointer; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/content.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
